@@ -38,59 +38,59 @@ const ProfileSchema = new Schema({
   experience: [
     {
       title: {
-        String,
-        reguiered: true
+        type: String,
+        reguired: true
       },
       company: {
-        title: String,
+        type: String,
         required: true
       },
       location: {
-        title: String
+        type: String
       },
       from: {
-        title: Date,
+        type: Date,
         required: true
       },
       to: {
-        title: Date
+        type: Date
       },
       current: {
         type: Boolean,
         default: false
       },
       description: {
-        title: Date
+        type: Date
       }
     }
   ],
   education: [
     {
       school: {
-        String,
-        reguiered: true
+        type: String,
+        reguired: true
       },
       degree: {
-        title: String,
+        type: String,
         required: true
       },
       field: {
-        title: String,
+        type: String,
         required: true
       },
       from: {
-        title: Date,
+        type: Date,
         required: true
       },
       to: {
-        title: Date
+        type: Date
       },
       current: {
         type: Boolean,
         default: false
       },
       description: {
-        title: Date
+        type: Date
       }
     }
   ],
@@ -104,7 +104,7 @@ const ProfileSchema = new Schema({
     facebook: {
       type: String
     },
-    linkdin: {
+    linkedin: {
       type: String
     },
     instagram: {
