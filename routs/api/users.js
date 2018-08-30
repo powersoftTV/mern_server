@@ -62,7 +62,7 @@ router.post("/register", (req, res) => {
     .catch(err => res.status(404).json(err));
 });
 
-// @route   GET request to api/users/login
+// @route   POST request to api/users/login
 // @desc    Login user / Returning  JWT Token
 // @access  Public
 router.post("/login", (req, res) => {
