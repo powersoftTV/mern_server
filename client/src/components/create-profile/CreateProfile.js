@@ -150,7 +150,7 @@ class CreateProfile extends Component {
                   name="handle"
                   value={this.state.handle}
                   onChange={this.onChange}
-                  error={errors.status}
+                  error={errors.handle}
                   info="A unique handle for your profile URL. Your full name, company name, nickname."
                 />
 
@@ -160,7 +160,7 @@ class CreateProfile extends Component {
                   value={this.state.status}
                   onChange={this.onChange}
                   options={options}
-                  error={errors.handle}
+                  error={errors.status}
                   info="Give us an idea of where you are at in your career"
                 />
 
@@ -169,7 +169,7 @@ class CreateProfile extends Component {
                   name="company"
                   value={this.state.company}
                   onChange={this.onChange}
-                  error={errors.status}
+                  error={errors.company}
                   info="Could be your own company or one you work for"
                 />
 
