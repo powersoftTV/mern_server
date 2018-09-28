@@ -24,6 +24,7 @@ import Profile from "./components/profile/Profile";
 
 import "./App.css";
 import { clearCurrentProfile } from "./actions/profileActions";
+import NotFound from "./components/not-found/NotFound";
 
 // Check for token
 if (localStorage.jwtToken) {
@@ -89,6 +90,7 @@ class App extends Component {
                   component={AddEducation}
                 />
               </Switch>
+              <Route exact path="/not-found" component={NotFound} />
             </div>
             <Footer />
           </div>
