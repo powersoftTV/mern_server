@@ -72,7 +72,7 @@ class PostComment extends Component {
 }
 
 PostComment.propTypes = {
-  addPost: PropTypes.func.isRequired,
+  addComment: PropTypes.func.isRequired,
   errors: PropTypes.object.isRequired,
   auth: PropTypes.object.isRequired,
   postId: PropTypes.string.isRequired
